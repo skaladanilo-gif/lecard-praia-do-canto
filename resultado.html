@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>LeCard · Sua próxima parada</title>
-<meta name="description" content="Enquanto o ônibus não vem, descubra sua próxima parada. Ativação experimental da campanha LeCard no Ponto Clínica Evoluir, Praia do Canto, Vitória.">
+<title>Toda hora tem LeCard · LeCard</title>
+<meta name="description" content="Toda hora tem LeCard. O gênio pergunta pelo horário e você escolhe: postos, refeição, farmácias, academias e mercados reais perto do ponto. Ativação experimental da campanha LeCard no Ponto Clínica Evoluir, Praia do Canto, Vitória.">
 <meta name="theme-color" content="#FFBC00">
 <script>
 /* Rotas reconhecidas (com ou sem subpasta, com ou sem barra final):
@@ -28,21 +28,22 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Maven+Pro:wght@500;600;700;800&display=swap">
 <link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="quiz.css?v=20261009b">
+<link rel="stylesheet" href="quiz.css?v=20261022a">
 <script src="config.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js" defer></script>
 <script src="smoke.js" defer></script>
-<script src="app.js?v=20261009b" defer></script>
+<script src="app.js?v=20261022a" defer></script>
 </head>
 <body class="is-loading">
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <div class="stage">
   <header class="topbar">
-    <a class="brand" href="./" aria-label="LeCard — voltar à abertura do quiz" data-keep-mode><img src="logo.svg" alt="LeCard" width="140" height="54"></a>
+    <a class="brand" href="./" aria-label="LeCard — voltar à abertura" data-keep-mode><img src="logo.svg" alt="LeCard" width="140" height="54"></a>
     <p class="stop-tag" aria-label="Você está no Ponto Clínica Evoluir, Praia do Canto, Vitória">
       <span class="stop-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 15V7a3 3 0 0 1 3-3h6a3 3 0 0 1 3 3v8" stroke="#FFBC00" stroke-width="2"/><path d="M5 15h14v2.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 5 17.5V15Z" fill="#FFBC00"/><path d="M8 19v1.5M16 19v1.5M6 10h12" stroke="#FFBC00" stroke-width="2" stroke-linecap="round"/></svg></span>
       Ponto Clínica Evoluir <span class="sep">·</span> Praia do Canto <span class="sep">·</span> Vitória
     </p>
+    <p class="now-chip" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10.4" class="nf"/><line x1="12" y1="12.8" x2="12" y2="7" class="nh"/><line x1="12" y1="13.2" x2="12" y2="4.4" class="nm"/><line x1="12" y1="14" x2="12" y2="3.2" class="ns"/><circle cx="12" cy="12" r="1.3" class="np"/></svg><span class="now-t"><span class="now-h">--</span><span class="now-c">:</span><span class="now-m">--</span></span><span class="now-tz">Brasília</span></p>
     <p class="step-label" id="stepLabel" aria-live="polite"></p>
   </header>
 
@@ -73,8 +74,8 @@
   </div>
 
   <footer class="foot">
-    <p class="signature"><b>LeCard</b> — Seu benefício, suas escolhas.</p>
-    <p class="foot-note">Concurso Criativo Maely 2026 · sem cadastro</p>
+    <p class="signature"><b>Toda hora tem LeCard.</b> <span>Seu benefício, suas escolhas.</span></p>
+    <p class="foot-note">Concurso Criativo Maely 2026</p>
   </footer>
 </div>
 
@@ -82,8 +83,8 @@
 <div class="idle" id="idle" hidden>
   <div class="idle-box" role="alertdialog" aria-modal="true" aria-labelledby="idleTitle" aria-describedby="idleText">
     <p class="idle-title" id="idleTitle">Ainda está por aqui?</p>
-    <p id="idleText">O quiz volta ao início em <strong id="idleCount">15</strong> segundos para a próxima pessoa.</p>
-    <button class="btn btn-primary" type="button" id="idleStay">Continuar meu quiz</button>
+    <p id="idleText">O painel volta ao início em <strong id="idleCount">15</strong> segundos para a próxima pessoa.</p>
+    <button class="btn btn-primary" type="button" id="idleStay">Continuar minha escolha</button>
   </div>
 </div>
 </body>
